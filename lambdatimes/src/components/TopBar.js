@@ -93,7 +93,7 @@ const TopBar = () => {
           <SpanCC>ANNOUNCEMENTS</SpanCC>
         </Center>
         <Right>
-          <span>LOG IN</span>
+          <SpanRC>LOG IN</SpanRC>
         </Right>
       </Container>
     </Top>
