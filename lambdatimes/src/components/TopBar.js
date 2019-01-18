@@ -43,13 +43,38 @@ const SpanLC = styled.span`
   font-weight: bold;
 `;
 
-const CenterContainer = styled.div`
+const Center = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex: 3;
   font-size: 9px;
+`;
+
+const SpanCC = styled.span`
+  cursor: pointer;
+  margin-right: 5%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+const Right = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+  font-size: 11px;
+  font-weight: bold;
+`;
+const SpanRC = styled.div`
+  cursor: pointer;
 `;
 
 
@@ -60,16 +85,16 @@ const TopBar = () => {
         <Left>
           <SpanLC>TOPICS</SpanLC><SpanLC>SEARCH</SpanLC>
         </Left>
-        <CenterContainer>
-          <span>GENERAL</span>
-          <span>BROWNBAG</span>
-          <span>RANDOM</span>
-          <span>MUSIC</span>
-          <span>ANNOUNCEMENTS</span>
-        </CenterContainer>
-        <div className="container-right">
+        <Center>
+          <SpanCC>GENERAL</SpanCC>
+          <SpanCC>BROWNBAG</SpanCC>
+          <SpanCC>RANDOM</SpanCC>
+          <SpanCC>MUSIC</SpanCC>
+          <SpanCC>ANNOUNCEMENTS</SpanCC>
+        </Center>
+        <Right>
           <span>LOG IN</span>
-        </div>
+        </Right>
       </Container>
     </Top>
   )
