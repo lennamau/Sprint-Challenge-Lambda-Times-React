@@ -1,6 +1,6 @@
-import React from 'react';
-import Tab from './Tab';
-import PropTypes from 'prop-types';
+import React from "react";
+import Tab from "./Tab";
+import PropTypes from "prop-types";
 
 const Tabs = props => {
   return (
@@ -11,13 +11,14 @@ const Tabs = props => {
           component for each one.
             give the tab component a `selectTabHandler`, 
             the `selectedTab`, and the `tab` itself as props*/}
-            {props.tabs.map ((tab,index) => (
-              <Tab key={index}
-                   selectTabHandler={props.selectTabHandler}
-                   selectedTab={props.selectedTab} 
-                   tab={tab}/>
-            )
-              )}  
+        {props.tabs.map((tab, index) => (
+          <Tab
+            key={index}
+            selectTabHandler={props.selectTabHandler}
+            selectedTab={props.selectedTab}
+            tab={tab}
+          />
+        ))}
       </div>
     </div>
   );
@@ -25,7 +26,7 @@ const Tabs = props => {
 
 Tabs.propTypes = {
   tabs: PropTypes.arrayOf(PropTypes.object)
-}
+};
 
 // Make sure to use PropTypes to validate your types!
 export default Tabs;

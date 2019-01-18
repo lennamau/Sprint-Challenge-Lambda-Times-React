@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-// Refactor this component to use styled components and not classNames. 
+import React from "react";
+import styled from "styled-components";
+// Refactor this component to use styled components and not classNames.
 // You can find the corresponding CSS in the CSS/index.css file
 
-const MainHeader= styled.div`
+const MainHeader = styled.div`
   display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,6 @@ const H1 = styled.h1`
   flex: 8;
   text-align: center;
   color: #000;
-
 `;
 
 const Date = styled.span`
@@ -57,7 +56,7 @@ const Header = () => {
       <H1>Lambda Times</H1>
       <Temp>98°</Temp>
     </MainHeader>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-// Refactor this component to use styled components and not classNames. 
+import React from "react";
+import styled from "styled-components";
+// Refactor this component to use styled components and not classNames.
 // You can find the corresponding CSS in the CSS/index.css file
 const Top = styled.div`
   width: 100%;
@@ -21,12 +21,10 @@ const Container = styled.div`
   color: #fff;
   letter-spacing: 1px;
   padding: 0 10px;
-  
+
   @media (min-width: 1280px) {
     width: 1280px;
   }
-  
-
 `;
 const Left = styled.div`
   display: flex;
@@ -77,13 +75,13 @@ const SpanRC = styled.div`
   cursor: pointer;
 `;
 
-
 const TopBar = () => {
   return (
     <Top>
       <Container>
         <Left>
-          <SpanLC>TOPICS</SpanLC><SpanLC>SEARCH</SpanLC>
+          <SpanLC>TOPICS</SpanLC>
+          <SpanLC>SEARCH</SpanLC>
         </Left>
         <Center>
           <SpanCC>GENERAL</SpanCC>
@@ -97,7 +95,7 @@ const TopBar = () => {
         </Right>
       </Container>
     </Top>
-  )
-}
+  );
+};
 
 export default TopBar;
